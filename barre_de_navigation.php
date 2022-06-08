@@ -7,7 +7,7 @@
         <div class="row align-items-center">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html"> <img src="img/klokers_logo.png" alt="logo" width="35%"
+                    <a class="navbar-brand" href="index.php"> <img src="img/klokers_logo.png" alt="logo" width="35%"
                         class="fix-left"> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -21,20 +21,20 @@
                                 <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="single-product.html">Shop</a>
+                                <a class="nav-link" href="single-product.php">Shop</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"
+                                <a class="nav-link dropdown-toggle" href="blog.php" id="navbarDropdown_3"
                                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     KLOKERS
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                    <a class="dropdown-item" href="contact.html">Contact</a>
-                                    <a class="dropdown-item" href="elements.html">Nous découvrir</a>
+                                    <a class="dropdown-item" href="contact.php">Contact</a>
+                                    <a class="dropdown-item" href="elements.php">Nous découvrir</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="cart.html">Panier</a>
+                                <a class="nav-link" href="cart.php">Panier</a>
                             </li>
                             <li class="nav-item">
                                 <?php
@@ -56,7 +56,7 @@
                         <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                         <a href=""><i class="ti-heart"></i></a>
                         <div class="dropdown cart">
-                            <a class="dropdown-toggle" href="cart.html" id="navbarDropdown3" role="button"
+                            <a class="dropdown-toggle" href="cart.php" id="navbarDropdown3" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-cart-plus"></i>
                             </a>

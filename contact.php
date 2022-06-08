@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>aranoz</title>
+  <title>aranaz</title>
   <link rel="icon" href="img/favicon.png">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,79 +27,12 @@
 </head>
 
 <body>
-    <!--::header part start::-->
-    <header class="main_menu home_menu">
-      <div class="container">
-          <div class="row align-items-center">
-              <div class="col-lg-12">
-                  <nav class="navbar navbar-expand-lg navbar-light">
-                      <a class="navbar-brand" href="index.html"> <img src="img/klokers_logo.png" alt="logo" width="35%"
-                        class="fix-left"> </a>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse"
-                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                          aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="menu_icon"><i class="fas fa-bars"></i></span>
-                      </button>
-
-                      <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
-                          <ul class="navbar-nav">
-                              <li class="nav-item">
-                                  <a class="nav-link" href="index.html">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="single-product.html">Shop</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"
-                                      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Informations
-                                  </a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                      <a class="dropdown-item" href="contact.html">Contact</a>
-                                      <a class="dropdown-item" href="elements.html">Nous découvrir</a>
-                                  </div>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="cart.html">Panier</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="login.html">Connexion</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div class="hearer_icon d-flex">
-                          <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
-                          <a href=""><i class="ti-heart"></i></a>
-                          <div class="dropdown cart">
-                              <a class="dropdown-toggle" href="cart.html" id="navbarDropdown3" role="button"
-                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  <i class="fas fa-cart-plus"></i>
-                              </a>
-                              <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <div class="single_product">
-  
-                                  </div>
-                              </div> -->
-                              
-                          </div>
-                      </div>
-                  </nav>
-              </div>
-          </div>
-      </div>
-      <div class="search_input" id="search_input_box">
-          <div class="container ">
-              <form class="d-flex justify-content-between search-inner">
-                  <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-                  <button type="submit" class="btn"></button>
-                  <span class="ti-close" id="close_search" title="Close Search"></span>
-              </form>
-          </div>
-      </div>
-  </header>
-  <!-- Header part end-->
+<?php
+    include 'barre_de_navigation.php';
+    ?>
 
 
+  <!--================Home Banner Area =================-->
   <!-- breadcrumb start-->
   <section class="breadcrumb breadcrumb_bg">
     <div class="container">
@@ -107,8 +40,8 @@
         <div class="col-lg-8">
           <div class="breadcrumb_iner">
             <div class="breadcrumb_iner_item">
-              <h2>Tracking Order</h2>
-              <p>Home <span>-</span> Tracking Order</p>
+              <h2>contact us</h2>
+              <p>Home <span>-</span> contact us</p>
             </div>
           </div>
         </div>
@@ -117,42 +50,122 @@
   </section>
   <!-- breadcrumb start-->
 
-  <!--================Tracking Box Area =================-->
-  <section class="tracking_box_area padding_top">
+  <!-- ================ contact section start ================= -->
+  <section class="contact-section padding_top">
     <div class="container">
-      <div class="row align-items-center">
-        <!-- <div class="col-lg-6">
-              <div class="reacking_box_text text-center h-100">
-                <h2>New to our Shop?</h2>
-                <p>There are advances being made in science and technology
-                  everyday, and a good example of this is the</p>
-                  <a href="#" class="btn_2">Create an Account</a>
-              </div>
-            </div> -->
-        <div class="col-lg-12">
-          <div class="tracking_box_inner">
-            <p>To track your order please enter your Order ID in the box below and press the "Track" button. This was
-              given
-              to you on your receipt and in the confirmation email you should have received.</p>
-            <form class="row tracking_form" action="#" method="post" novalidate="novalidate">
-              <div class="col-md-12 form-group">
-                <input type="text" class="form-control" id="order" name="order" placeholder="Order ID">
-              </div>
-              <div class="col-md-12 form-group">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Billing Email Address">
-              </div>
-              <div class="col-md-12 form-group">
-                <button type="submit" value="submit" class="btn_3">Track Order</button>
-              </div>
-            </form>
-          </div>
-        </div>
+      <div class="d-none d-sm-block mb-5 pb-4">
+        <div id="map" style="height: 480px;"></div>
+        <script>
+          function initMap() {
+            var uluru = {
+              lat: -25.363,
+              lng: 131.044
+            };
+            var grayStyles = [{
+                featureType: "all",
+                stylers: [{
+                    saturation: -90
+                  },
+                  {
+                    lightness: 50
+                  }
+                ]
+              },
+              {
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#ccdee9'
+                }]
+              }
+            ];
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: {
+                lat: -31.197,
+                lng: 150.744
+              },
+              zoom: 9,
+              styles: grayStyles,
+              scrollwheel: false
+            });
+          }
+        </script>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
+        </script>
 
       </div>
 
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Get in Touch</h2>
+        </div>
+        <div class="col-lg-8">
+          
+          <form class="form-contact contact_form" action="contact-php.php" method="post" id="contactForm"
+            novalidate="novalidate">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+
+                  <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
+                    placeholder='Enter Message'></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter your name'" placeholder='Enter your name'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter email address'" placeholder='Enter email address'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Subject'" placeholder='Enter Subject'>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <a type="submit" href="contact-php.php" class="btn_3 button-contactForm">Send Message</a>
+            </div>
+          </form>
+
+
+        </div>
+        <div class="col-lg-4">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-home"></i></span>
+            <div class="media-body">
+              <h3>Buttonwood, California.</h3>
+              <p>Rosemead, CA 91770</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+            <div class="media-body">
+              <h3>00 (440) 9865 562</h3>
+              <p>Mon to Fri 9am to 6pm</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email"></i></span>
+            <div class="media-body">
+              <h3>support@colorlib.com</h3>
+              <p>Send us your query anytime!</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!--================End Tracking Box Area =================-->
+  <!-- ================ contact section end ================= -->
 
   <!--::footer_part start::-->
   <footer class="footer_part">
@@ -275,8 +288,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="js/jquery.form.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/mail-script.js"></script>
-  <script src="js/stellar.js"></script>
-  <script src="js/price_rangs.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
 </body>
