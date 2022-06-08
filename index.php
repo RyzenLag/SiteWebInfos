@@ -111,6 +111,20 @@
     </section>
     <!-- banner part start-->
 
+        <!-- container part start -->
+    
+        <div class="container-fluid-1">
+            <div class="row justify-content-evenly">
+                <div class="col-2" style="background-color:yellow; height: 400px;">1</div>
+                <div class="col-2" style="background-color:purple;height: 400px;">2</div>
+                <div class="col-2" style="background-color:red;height: 400px;">3</div>
+                <div class="col-2" style="background-color:blue;height:400px;">4</div>
+                <div class="col-2" style="background-color:green;height:400px;">5</div>
+            </div>
+        </div>
+    
+    <!-- container part end -->
+
     <div>
 
         <div class="component component--type--gn-explore-collections component--view-mode--default gn_explore_collections dark-bg">
