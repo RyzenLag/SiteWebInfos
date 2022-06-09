@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -49,12 +51,12 @@
     <!-- container part start -->
     
         <div class="container-fluid-1">
-            <div class="row justify-content-evenly">
+            <div class="justify-content-evenly">
                 <div class="col-2" style="background-color:yellow; height: 400px;">1</div>
                 <div class="col-2" style="background-color:purple;height: 400px;">2</div>
                 <div class="col-2" style="background-color:red;height: 400px;">3</div>
-                <div class="col-2" style="background-color:blue;height:400px;">4</div>
-                <div class="col-2" style="background-color:green;height:400px;">5</div>
+                <div class="col-2" style="background-color:blue;height: 400px;">4</div>
+                <div class="col-2" style="background-color:green;height: 400px;">5</div>
             </div>
         </div>
     
