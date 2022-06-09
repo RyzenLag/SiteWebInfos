@@ -1,3 +1,10 @@
+<?php
+  require'config.php';
+  require'panier-php.php';
+  
+  $panier = new panier();
+?>
+
 <!doctype html>
 <html lang="zxx">
 
@@ -51,20 +58,17 @@
 
   <!--================Single Product Area 1 =================-->
   
-  <?php
-
-  require'config.php';
   
-  var_dump(query('SELECT * FROM products'));
-  
-
-  ?>
 
   <?php 
     $products = query('SELECT * FROM products');
+    $marque="rolex";
   ?>
-
-  <?php foreach ($products as $product): ?>
+  
+  <?php foreach ($products as $product): 
+    if ($product->marque===$marque){
+    ?>
+    
   
     <div class="product_image_area section_padding">
       <div class="container">
@@ -73,7 +77,7 @@
             <div class="product_slider_img">
               <div id="vertical">
                 <div data-thumb="img/product/single-product/product_1.png">
-                  <img src="img/product/single-product/product_<?php $product->id; ?>.png" />
+                  <img src="img/product/single-product/product_<?php echo($product->id); ?>.png" />
                 </div>
                 <div data-thumb="img/product/single-product/product_1.png">
                   <img src="img/product/single-product/product_1.png" />
@@ -110,7 +114,7 @@
                   <input class="input-number" type="text" value="1" min="0" max="10">
                   <span class="number-increment"> <i class="ti-plus"></i></span>
                 </div>
-                <a href="#" class="btn_3">add to cart</a>
+                <a href="addpanier-php.php?id=<?php echo($product->id);?>" class="btn_3">add to cart</a>
                 <a href="#" class="like_us"> <i class="ti-heart"></i> </a>
               </div>
             </div>
@@ -118,7 +122,9 @@
         </div>
       </div>
     </div>
-  <?php endforeach ?>
+  <?php
+  }
+  endforeach ?>
   <!--================End Single Product Area =================-->
 
 

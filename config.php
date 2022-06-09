@@ -16,15 +16,16 @@
     }
 
     
-    function query($sql){
+    function query($sql, $data = array()){
         $sname = "localhost";
         $uname = "root";
         $password = "";
         $db_name = "projet_siteweb_isainfo";
         $bdd = new PDO('mysql:host='.$sname.';dbname='.$db_name, $uname, $password,
         array(PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES UTF8'));
+        
         $req = $bdd->prepare($sql);
-        $req->execute();
+        $req->execute($data);
         return $req->fetchAll(PDO::FETCH_OBJ);
     }
 
