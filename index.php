@@ -1,35 +1,4 @@
-<!doctype html>
-<html lang="zxx">
 
-<head>
-    
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>aranoz</title>
-    <link rel="icon" href="img/favicon.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/all.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-</head>
-
-<body>
     <!--::header part start::-->    
     <?php
     include 'barre_de_navigation.php';
@@ -52,11 +21,11 @@
     
         <div class="container-fluid-1">
             <div class="justify-content-evenly">
-                <div class="col-2" style="background-color:yellow; height: 400px;">1</div>
-                <div class="col-2" style="background-color:purple;height: 400px;">2</div>
-                <div class="col-2" style="background-color:red;height: 400px;">3</div>
-                <div class="col-2" style="background-color:blue;height: 400px;">4</div>
-                <div class="col-2" style="background-color:green;height: 400px;">5</div>
+                <div class="col-2" style="background-color:yellow; height: 400px;"><a href="single-product.php?marque=rolex">1</a></div>
+                <div class="col-2" style="background-color:purple;height: 400px;"><a href="single-product.php?marque=rolex">2</a></div>
+                <div class="col-2" style="background-color:red;height: 400px;"><a href="single-product.php?marque=carrefour">3</a></div>
+                <div class="col-2" style="background-color:blue;height: 400px;"><a href="single-product.php?marque=rolex">4</a></div>
+                <div class="col-2" style="background-color:green;height: 400px;"><a href="single-product.php?marque=rolex">5</a></div>
             </div>
         </div>
     

@@ -1,4 +1,14 @@
 <?php
+    require_once 'panier-php.php';
+    require_once 'single-product-php.php';
+
+
+    if (!isset($_SESSION)){
+        session_start();
+    }
+    if (!isset($_SESSION['panier'])){
+        $_SESSION['panier'] = array();
+    }
 
     $sname = "localhost";
     $uname = "root";
@@ -15,7 +25,7 @@
         die('Erreur'.$e->getMessage());
     }
 
-    
+
     function query($sql, $data = array()){
         $sname = "localhost";
         $uname = "root";
@@ -28,6 +38,7 @@
         $req->execute($data);
         return $req->fetchAll(PDO::FETCH_OBJ);
     }
+
 
     /*
     $sname = "localhost";

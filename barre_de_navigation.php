@@ -1,7 +1,36 @@
 <?php
-    session_start(); 
+    require_once 'config.php';
 ?>
 
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>aranoz</title>
+  <link rel="icon" href="img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- animate CSS -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- owl carousel CSS -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/lightslider.min.css">
+  <!-- font awesome CSS -->
+  <link rel="stylesheet" href="css/all.css">
+  <!-- flaticon CSS -->
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- font awesome CSS -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
 <header class="main_menu home_menu">
     <div class="container">
         <div class="row align-items-center">
@@ -20,8 +49,18 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="index.php">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="single-product.php">Shop</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="blog.php" id="navbarDropdown_3"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SHOP
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
+                                    <a class="dropdown-item" href="single-product.php?marque=rolex">ROLEX</a>
+                                    <a class="dropdown-item" href="single-product.php?marque=rolex">....</a>
+                                    <a class="dropdown-item" href="single-product.php?marque=rolex">....</a>
+                                    <a class="dropdown-item" href="single-product.php?marque=rolex">....</a>
+                                    <a class="dropdown-item" href="single-product.php?marque=rolex">....</a>
+                                </div>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="blog.php" id="navbarDropdown_3"
@@ -34,14 +73,13 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="cart.php">Panier</a>
+                                <a class="nav-link" href="panier.php">Panier</a>
                             </li>
                             <li class="nav-item">
                                 <?php
                                 if (isset($_SESSION['email'])) { ?>
-                                    <a class="nav-link" href="mon_compte.php">Mon compte</a>
+                                    <a class="nav-link" href="mon_compte.php"> <?php echo $_SESSION['pseudo'];?></a>
                                 <?php 
-                                    echo $_SESSION['pseudo'];
                                 }
                                 else { ?>
                                     <a class="nav-link" href="login.php">Connexion/Inscription</a>
@@ -54,17 +92,39 @@
                     </div>
                     <div class="hearer_icon d-flex">
                         <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
-                        <a href=""><i class="ti-heart"></i></a>
                         <div class="dropdown cart">
-                            <a class="dropdown-toggle" href="cart.php" id="navbarDropdown3" role="button"
+                            <a class="dropdown-toggle" id="navbarDropdown3" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-cart-plus"></i>
+                                <a><i class="fas fa-cart-plus"></i></a>
                             </a>
-                            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="single_product">
-
-                                </div>
-                            </div> -->
+                            
+                            <?php
+                                if (isset($_SESSION['email'])) { ?>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <button type="submit" value="submit" class="btn_3">
+                                            <a href="mon_compte.php">Mon Compte</a>
+                                        </button>
+                                        <br>
+                                        <button href="logout-php.php" type="submit" value="submit" class="btn_3">
+                                            <a href="logout-php.php">log out</a>
+                                        </button>
+                                    </div> 
+                                <?php 
+                                }
+                                else { ?>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <button type="submit" value="submit" class="btn_3">
+                                            <a href="login.php">Connexion</a>
+                                        </button>
+                                        <br>
+                                        <button href="logout-php.php" type="submit" value="submit" class="btn_3">
+                                            <a href="register.php">Inscription</a>
+                                        </button>
+                                    </div> 
+                                <?php
+                                }
+                                ?>
+                            
                             
                         </div>
                     </div>
