@@ -50,16 +50,16 @@
                                 <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="blog.php" id="navbarDropdown_3"
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown_3"
                                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     SHOP
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                    <a class="dropdown-item" href="single-product.php?marque=rolex">ROLEX</a>
-                                    <a class="dropdown-item" href="single-product.php?marque=rolex">....</a>
-                                    <a class="dropdown-item" href="single-product.php?marque=rolex">....</a>
-                                    <a class="dropdown-item" href="single-product.php?marque=rolex">....</a>
-                                    <a class="dropdown-item" href="single-product.php?marque=rolex">....</a>
+                                <div class="dropdown-menu" href="single-product.php" aria-labelledby="navbarDropdown_2">
+                                    <a class="dropdown-item" href="single-product.php?marque=Rolex">Rolex</a>
+                                    <a class="dropdown-item" href="single-product.php?marque=Cartier">Cartier</a>
+                                    <a class="dropdown-item" href="single-product.php?marque=Richard Mille">Richard Mille</a>
+                                    <a class="dropdown-item" href="single-product.php?marque=Audemars Piguet">Audemars Piguet</a>
+                                    <a class="dropdown-item" href="single-product.php?marque=Patek Philippe">Patek Philippe</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">

@@ -21,11 +21,11 @@
     
         <div class="container-fluid-1">
             <div class="justify-content-evenly">
-                <div class="col-2" style="background-color:yellow; height: 400px;"><a href="single-product.php?marque=rolex">1</a></div>
-                <div class="col-2" style="background-color:purple;height: 400px;"><a href="single-product.php?marque=rolex">2</a></div>
-                <div class="col-2" style="background-color:red;height: 400px;"><a href="single-product.php?marque=carrefour">3</a></div>
-                <div class="col-2" style="background-color:blue;height: 400px;"><a href="single-product.php?marque=rolex">4</a></div>
-                <div class="col-2" style="background-color:green;height: 400px;"><a href="single-product.php?marque=rolex">5</a></div>
+                <div class="col-2" style="background-color:yellow; height: 400px;"><a href="single-product.php?marque=Rolex">1</a></div>
+                <div class="col-2" style="background-color:purple;height: 400px;"><a href="single-product.php?marque=Cartier">2</a></div>
+                <div class="col-2" style="background-color:red;height: 400px;"><a href="single-product.php?marque=Richard Mille">3</a></div>
+                <div class="col-2" style="background-color:blue;height: 400px;"><a href="single-product.php?marque=Audemars Piguet">4</a></div>
+                <div class="col-2" style="background-color:green;height: 400px;"><a href="single-product.php?marque=Patek Philippe">5</a></div>
             </div>
         </div>
     

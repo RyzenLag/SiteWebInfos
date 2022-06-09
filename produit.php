@@ -1,7 +1,6 @@
 <?php
   require_once 'config.php'; 
   require_once 'single-product-php.php'; 
-  require_once 'produit-php.php';
 ?>
 
 
@@ -28,23 +27,23 @@
     <div class="product_image_area section_padding">
       <div class="container">
         <div class="row s_product_inner justify-content-between">
-          <div class="col-lg-7 col-xl-7">
+          <div class="col-6" width="500">
             <div class="product_slider_img">
               <div id="vertical">
                 <div data-thumb="img/product/single-product/product_1.png">
-                  <img src="img/product/single-product/product_<?php echo($product->id); ?>.png" />
+                  <img src="img/montre/montre_<?php echo($product->id);?>.png" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 col-xl-4">
+          <div class="col-6">
             <div class="s_product_text">
-              <h5>previous <span>|</span> next</h5>
               <h3><?php echo($product->nom); ?></h3>
+              <h5><?php echo($product->detail); ?></h5>
               <h2> <?php echo(number_format($product->price,2,',',' ')); ?> €</h2>
               <ul class="list">
                 <li>
-                  <a class="active" href="#">
+                  <a class="active" href="single-product.php?marque=<?php echo($product->marque); ?>">
                     <span>marque : </span> <?php echo($product->marque); ?></a>
                 </li>
                 <li>
