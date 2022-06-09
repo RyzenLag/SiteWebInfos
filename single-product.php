@@ -48,285 +48,79 @@
   <!-- breadcrumb start-->
   <!--================End Home Banner Area =================-->
 
+
   <!--================Single Product Area 1 =================-->
-  <div class="product_image_area section_padding">
-    <div class="container">
-      <div class="row s_product_inner justify-content-between">
-        <div class="col-lg-7 col-xl-7">
-          <div class="product_slider_img">
-            <div id="vertical">
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
+  
+  <?php
+
+  require'config.php';
+  
+  var_dump(query('SELECT * FROM products'));
+  
+
+  ?>
+
+  <?php 
+    $products = query('SELECT * FROM products');
+  ?>
+
+  <?php foreach ($products as $product): ?>
+  
+    <div class="product_image_area section_padding">
+      <div class="container">
+        <div class="row s_product_inner justify-content-between">
+          <div class="col-lg-7 col-xl-7">
+            <div class="product_slider_img">
+              <div id="vertical">
+                <div data-thumb="img/product/single-product/product_1.png">
+                  <img src="img/product/single-product/product_<?php $product->id; ?>.png" />
+                </div>
+                <div data-thumb="img/product/single-product/product_1.png">
+                  <img src="img/product/single-product/product_1.png" />
+                </div>
+                <div data-thumb="img/product/single-product/product_1.png">
+                  <img src="img/product/single-product/product_1.png" />
+                </div>
+                <div data-thumb="img/product/single-product/product_1.png">
+                  <img src="img/product/single-product/product_1.png" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-5 col-xl-4">
-          <div class="s_product_text">
-            <h5>previous <span>|</span> next</h5>
-            <h3>Faded SkyBlu Denim Jeans</h3>
-            <h2>$149.99</h2>
-            <ul class="list">
-              <li>
-                <a class="active" href="#">
-                  <span>Category</span> : Household</a>
-              </li>
-              <li>
-                <a href="#"> <span>Availibility</span> : In Stock</a>
-              </li>
-            </ul>
-            <p>
-              First replenish living. Creepeth image image. Creeping can't, won't called.
-              Two fruitful let days signs sea together all land fly subdue
-            </p>
-            <div class="card_area d-flex justify-content-between align-items-center">
-              <div class="product_count">
-                <span class="inumber-decrement"> <i class="ti-minus"></i></span>
-                <input class="input-number" type="text" value="1" min="0" max="10">
-                <span class="number-increment"> <i class="ti-plus"></i></span>
+          <div class="col-lg-5 col-xl-4">
+            <div class="s_product_text">
+              <h5>previous <span>|</span> next</h5>
+              <h3><?php echo($product->nom); ?></h3>
+              <h2> <?php echo(number_format($product->price,2,',',' ')); ?> €</h2>
+              <ul class="list">
+                <li>
+                  <a class="active" href="#">
+                    <span>marque : </span> <?php echo($product->marque); ?></a>
+                </li>
+                <li>
+                  <a href="#"> <span>Availibility</span> : In Stock</a>
+                </li>
+              </ul>
+              <p>
+              <?php echo($product->description); ?>
+              </p>
+              <div class="card_area d-flex justify-content-between align-items-center">
+                <div class="product_count">
+                  <span class="inumber-decrement"> <i class="ti-minus"></i></span>
+                  <input class="input-number" type="text" value="1" min="0" max="10">
+                  <span class="number-increment"> <i class="ti-plus"></i></span>
+                </div>
+                <a href="#" class="btn_3">add to cart</a>
+                <a href="#" class="like_us"> <i class="ti-heart"></i> </a>
               </div>
-              <a href="#" class="btn_3">add to cart</a>
-              <a href="#" class="like_us"> <i class="ti-heart"></i> </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  <?php endforeach ?>
   <!--================End Single Product Area =================-->
 
-  <!--================Single Product Area 2 =================-->
-  <div class="product_image_area section_padding">
-    <div class="container">
-      <div class="row s_product_inner justify-content-between">
-        <div class="col-lg-7 col-xl-7">
-          <div class="product_slider_img">
-            <div id="vertical">
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 col-xl-4">
-          <div class="s_product_text">
-            <h5>previous <span>|</span> next</h5>
-            <h3>Faded SkyBlu Denim Jeans</h3>
-            <h2>$149.99</h2>
-            <ul class="list">
-              <li>
-                <a class="active" href="#">
-                  <span>Category</span> : Household</a>
-              </li>
-              <li>
-                <a href="#"> <span>Availibility</span> : In Stock</a>
-              </li>
-            </ul>
-            <p>
-              First replenish living. Creepeth image image. Creeping can't, won't called.
-              Two fruitful let days signs sea together all land fly subdue
-            </p>
-            <div class="card_area d-flex justify-content-between align-items-center">
-              <div class="product_count">
-                <span class="inumber-decrement"> <i class="ti-minus"></i></span>
-                <input class="input-number" type="text" value="1" min="0" max="10">
-                <span class="number-increment"> <i class="ti-plus"></i></span>
-              </div>
-              <a href="#" class="btn_3">add to cart</a>
-              <a href="#" class="like_us"> <i class="ti-heart"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--================End Single Product Area =================-->
-
-  <!--================Single Product Area 3 =================-->
-  <div class="product_image_area section_padding">
-    <div class="container">
-      <div class="row s_product_inner justify-content-between">
-        <div class="col-lg-7 col-xl-7">
-          <div class="product_slider_img">
-            <div id="vertical">
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 col-xl-4">
-          <div class="s_product_text">
-            <h5>previous <span>|</span> next</h5>
-            <h3>Faded SkyBlu Denim Jeans</h3>
-            <h2>$149.99</h2>
-            <ul class="list">
-              <li>
-                <a class="active" href="#">
-                  <span>Category</span> : Household</a>
-              </li>
-              <li>
-                <a href="#"> <span>Availibility</span> : In Stock</a>
-              </li>
-            </ul>
-            <p>
-              First replenish living. Creepeth image image. Creeping can't, won't called.
-              Two fruitful let days signs sea together all land fly subdue
-            </p>
-            <div class="card_area d-flex justify-content-between align-items-center">
-              <div class="product_count">
-                <span class="inumber-decrement"> <i class="ti-minus"></i></span>
-                <input class="input-number" type="text" value="1" min="0" max="10">
-                <span class="number-increment"> <i class="ti-plus"></i></span>
-              </div>
-              <a href="#" class="btn_3">add to cart</a>
-              <a href="#" class="like_us"> <i class="ti-heart"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--================End Single Product Area =================-->
-
-  <!--================Single Product Area 4 =================-->
-  <div class="product_image_area section_padding">
-    <div class="container">
-      <div class="row s_product_inner justify-content-between">
-        <div class="col-lg-7 col-xl-7">
-          <div class="product_slider_img">
-            <div id="vertical">
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 col-xl-4">
-          <div class="s_product_text">
-            <h5>previous <span>|</span> next</h5>
-            <h3>Faded SkyBlu Denim Jeans</h3>
-            <h2>$149.99</h2>
-            <ul class="list">
-              <li>
-                <a class="active" href="#">
-                  <span>Category</span> : Household</a>
-              </li>
-              <li>
-                <a href="#"> <span>Availibility</span> : In Stock</a>
-              </li>
-            </ul>
-            <p>
-              First replenish living. Creepeth image image. Creeping can't, won't called.
-              Two fruitful let days signs sea together all land fly subdue
-            </p>
-            <div class="card_area d-flex justify-content-between align-items-center">
-              <div class="product_count">
-                <span class="inumber-decrement"> <i class="ti-minus"></i></span>
-                <input class="input-number" type="text" value="1" min="0" max="10">
-                <span class="number-increment"> <i class="ti-plus"></i></span>
-              </div>
-              <a href="#" class="btn_3">add to cart</a>
-              <a href="#" class="like_us"> <i class="ti-heart"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--================End Single Product Area =================-->
-
-  <!--================Single Product Area 5 =================-->
-  <div class="product_image_area section_padding">
-    <div class="container">
-      <div class="row s_product_inner justify-content-between">
-        <div class="col-lg-7 col-xl-7">
-          <div class="product_slider_img">
-            <div id="vertical">
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-              <div data-thumb="img/product/single-product/product_1.png">
-                <img src="img/product/single-product/product_1.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 col-xl-4">
-          <div class="s_product_text">
-            <h5>previous <span>|</span> next</h5>
-            <h3>Faded SkyBlu Denim Jeans</h3>
-            <h2>$149.99</h2>
-            <ul class="list">
-              <li>
-                <a class="active" href="#">
-                  <span>Category</span> : Household</a>
-              </li>
-              <li>
-                <a href="#"> <span>Availibility</span> : In Stock</a>
-              </li>
-            </ul>
-            <p>
-              First replenish living. Creepeth image image. Creeping can't, won't called.
-              Two fruitful let days signs sea together all land fly subdue
-            </p>
-            <div class="card_area d-flex justify-content-between align-items-center">
-              <div class="product_count">
-                <span class="inumber-decrement"> <i class="ti-minus"></i></span>
-                <input class="input-number" type="text" value="1" min="0" max="10">
-                <span class="number-increment"> <i class="ti-plus"></i></span>
-              </div>
-              <a href="#" class="btn_3">add to cart</a>
-              <a href="#" class="like_us"> <i class="ti-heart"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--================End Single Product Area =================-->
 
   <!-- product_list part start-->
   <section class="product_list best_seller">
