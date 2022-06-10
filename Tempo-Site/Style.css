@@ -1,0 +1,112 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, rgb(214, 212, 212) 20%, rgb(182, 181, 181) 80%);
+    /* background: linear-gradient(135deg, #fc00ff, #00dbde);
+    background: linear-gradient(135deg, #4568DC, #B06AB3); */
+    /* background: linear-gradient(to top right, #1cd7f8, #ff93f1 100%, #1f72ee 5%); */
+    min-height: 90vh;
+}
+
+.container {
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 100;
+    
+}
+
+.container .row .card {
+    width: 400px;
+    height: 550px;
+    margin: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    width: 20px;
+    opacity: 0;
+    z-index: 200;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.fas.fa-heart {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    font-size: 1.3rem;
+    color: #ffffff80;
+}
+
+.container .row .card .card-body {
+    padding: 1rem 1.2rem;
+    color: #fff;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(.50);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+input[type="checkbox"]:checked+.fas.fa-heart {
+    will-change: font-size;
+    color: #e2264d;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+}
+
+.container .row .card .card-body .card-img img {
+    width: 370px;
+    height: 400px;
+    object-fit:contain;
+}
+
+.container .row .card .card-body .name.h5 {
+    margin: 0;
+}
+
+.container .row .card .card-body .price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(31, 30, 30);
+}
+
+.container .row .card .card-body .btn.btn-primary {
+    background: linear-gradient(145deg, rgb(79, 75, 75), rgb(31, 30, 30) 50%, rgb(79, 75, 75));
+    border: none;
+    font-size: 600;
+}
+
+.container .row .card .card-body .btn.btn-primary:hover {
+    background: linear-gradient(110deg, #0685ac, #05ff9b 50%, #0685ac);
+}
+
+.justify-content-center{
+  overflow: hidden;
+}
