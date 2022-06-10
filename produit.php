@@ -15,12 +15,16 @@
   
 
   <?php 
-    $products = query('SELECT * FROM products');
+    //$colonne = "id";
     $id=$_GET['id'];
+    $products = query("SELECT * FROM products WHERE id = '$id'"); 
+    
+    if (empty($products))
+    {echo("aucun composant");}
   ?>
   
   <?php foreach ($products as $product): 
-    if ($product->id==$id){
+    //if ($product->id==$id){
     ?>
     
   
@@ -69,7 +73,7 @@
       </div>
     </div>
   <?php
-  }
+  //}
   endforeach ?>
   <!--================End Single Product Area =================-->
 

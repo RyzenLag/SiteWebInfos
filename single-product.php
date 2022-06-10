@@ -60,7 +60,39 @@
     <div class="row align-items-start">
     <?php 
       $marque=$_GET['marque'];
-      $products = query('SELECT * FROM products');
+      $nom=$_GET['nom'];
+      var_dump($marque);
+      var_dump($nom);
+      
+      $products_marque = query("SELECT * FROM products WHERE marque = '$marque'");
+      $products_nom = query("SELECT * FROM products WHERE nom LIKE '%$nom%'");
+      if (empty($products_marque)){
+      
+        var_dump($products_nom);
+        if (empty($products_nom)){        
+          $products = query("SELECT * FROM products");
+          echo("tout");
+        }
+        else {
+          $products = query("SELECT * FROM products WHERE nom LIKE '%$nom%'");
+          echo("recherche par nom dans tout");
+        }
+      }
+      else {
+        
+        var_dump($products_nom);
+        if (empty($products_nom)){        
+          $products = query("SELECT * FROM products WHERE marque = '$marque'");
+          echo("recherche marque");
+        }
+        else {
+          $products = query("SELECT * FROM products WHERE marque = '$marque' AND nom = '%$nom%' ");
+          echo("recherche par nom dans marque");
+        }
+      }
+
+      if (empty($products))
+      {echo("error : aucun produit !");}
     ?>
     
     <?php foreach ($products as $product): 

@@ -28,7 +28,7 @@
 
 <body>
 <?php
-    include 'barre_de_navigation.php';
+    include 'barre_de_navigation.php'; //last maj vendredi aprèm
     ?>
 
 

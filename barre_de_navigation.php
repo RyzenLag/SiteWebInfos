@@ -50,11 +50,12 @@
                                 <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown_3"
+                                <a class="nav-link dropdown-toggle" href="single-product.php?marque=all" id="navbarDropdown_3"
                                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     SHOP
                                 </a>
-                                <div class="dropdown-menu" href="single-product.php" aria-labelledby="navbarDropdown_2">
+                                <div class="dropdown-menu" href="" aria-labelledby="navbarDropdown_2">
+                                    <a class="dropdown-item" href="single-product.php?marque=all#nom=">Nos montres</a>
                                     <a class="dropdown-item" href="single-product.php?marque=Rolex">Rolex</a>
                                     <a class="dropdown-item" href="single-product.php?marque=Cartier">Cartier</a>
                                     <a class="dropdown-item" href="single-product.php?marque=Richard Mille">Richard Mille</a>
