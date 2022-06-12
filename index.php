@@ -8,29 +8,33 @@
 
 
             <!-- container part start -->
-            
-                <div class="mt-5 pt-5 container-fluid">
-                    <div class="row justify-content-center">
-                        <a class="col-2" style="background-color:yellow; height: 400px;" href="single-product.php?marque=Rolex&nom=">
-                            <img src="../SiteWebInfos/img/montre1.png" height="250" weidth="500">
+                <br>
+                <br>
+                <br>
+               
+                
+                <div style="background-image: url(../SiteWebInfos/img/Rolex_banner.jpg); background-color:rgba(0,0,0,0.5); " class="mt-4 container-fluid">  
+                    <div class="row justify-content-center" style="background-color:rgba(0,0,0,0.7);">
+                        <a class="col-2" style="color: black; text-align: center; height: 400px;" href="single-product.php?marque=Rolex&nom=">
+                            <img src="../SiteWebInfos/img/montre1.png" height="250" weidth="500">Rolex
                         </a>
-                        <a class="col-2" style="background-color:purple;height: 400px;" href="single-product.php?marque=Cartier&nom=">
-                            <img src="../SiteWebInfos/img/montre2.png" height="250" weidth="500">
+                        <a class="col-2" style="color: black; text-align: center; 400px;" href="single-product.php?marque=Cartier&nom=">
+                            <img src="../SiteWebInfos/img/montre2.png" height="250" weidth="500">Cartier
                         </a>
-                        <a class="col-2" style="background-color:red;height: 400px;" href="single-product.php?marque=Richard Mille&nom=">
-                            <img src="../SiteWebInfos/img/montre3.png" height="250" weidth="500">
+                        <a class="col-2" style="color: black; text-align: center; height: 400px;" href="single-product.php?marque=Richard Mille&nom=">
+                            <img src="../SiteWebInfos/img/montre3.png" height="250" weidth="500">Richard Mille
                         </a>
-                        <a class="col-2" style="background-color:blue;height: 400px;" href="single-product.php?marque=Audemars Piguet&nom=">
-                            <img src="../SiteWebInfos/img/montre4.png" height="250" weidth="500">
+                        <a class="col-2" style="color: black; text-align: center; height: 400px;" href="single-product.php?marque=Audemars Piguet&nom=">
+                            <img src="../SiteWebInfos/img/montre4.png" height="250" weidth="500">Audemars Piguet
                         </a>
-                        <a class="col-2" style="background-color:green;height: 400px;" href="single-product.php?marque=Patek Philippe&nom=">
-                            <img src="../SiteWebInfos/img/montre5.png" height="250" weidth="500">
-                        </a>
+                        <a class="col-2" style="color: black; text-align: center; height: 400px;" href="single-product.php?marque=Patek Philippe&nom=">
+                            <img src="../SiteWebInfos/img/montre5.png" height="250" weidth="500">Patek Philippe
+</a>
                     </div>
                 </div>
             
             <!-- container part end -->
-
+            
 
             <!-- subscribe_area part start-->
             <!-- product_list part start-->
@@ -48,7 +52,7 @@
                     </div>
                 </div>
                 </div>
-                <div class=" bg-light row align-items-center justify-content-between">
+                <div class=" bg-light row align-items-center justify-content-between" style="height: 265px">
                 <div class="col-lg-12 ">
                     <!--produit à ajouter contenant paramètre top montre-->
                     
@@ -59,25 +63,19 @@
     
                     foreach ($products as $product): 
                     ?>
-                        <div class="product_image_area section_padding col-12">
+                        <div class="col-12" style="height: 300px">
                             <a href="produit.php?id=<?php echo($product->id);?>">
-                            <div class="container-fluid" style="">
-                            <div class="row s_product_inner justify-content-between">
-                                <div class="">
-                                <div class="">
-                                    <div id="">
+                            <div class="container-fluid align-items-start" style="height: 300px">
+                            <div class=" justify-content-start align-items-start">
                                     <div class="" data-thumb="img/montre/montre_<?php echo($product->id);?>.png">
-                                        <img height="265" src="img/montre/montre_<?php echo($product->id);?>.png" style="
+                                        <img height="200" src="img/montre/montre_<?php echo($product->id);?>.png" style="
                                                                                         display: block;
                                                                                         margin-left: 20x;
                                                                                         margin-right: auto;
                                                                                         
                                                                                         "/>
                                     </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="justify-content-between align-items-center col-12">
+                                <div class="justify-content-center align-items-start col-12">
                                 <div class="s_product_text">
                                     <h3><span href="produit.php?id=<?php echo($product->id);?>"><?php echo($product->nom); ?></span></h3>
                                     

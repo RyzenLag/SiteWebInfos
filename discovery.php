@@ -1,67 +1,22 @@
-<!doctype html>
-<html lang="zxx">
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>aranoz</title>
-	<link rel="icon" href="img/favicon.png">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- animate CSS -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- owl carousel CSS -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<!-- font awesome CSS -->
-	<link rel="stylesheet" href="css/all.css">
-	<!-- flaticon CSS -->
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/themify-icons.css">
-	<link rel="stylesheet" href="css/nice-select.css">
-	<!-- font awesome CSS -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- swiper CSS -->
-	<link rel="stylesheet" href="css/slick.css">
-	<!-- style CSS -->
-	<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
 <?php
     include 'barre_de_navigation.php';
-    ?>
+?>
 
-
-	<!-- breadcrumb start-->
-	<section class="breadcrumb breadcrumb_bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breadcrumb_iner text-center">
-						<div class="breadcrumb_iner_item">
-							<h2>KLOKERS</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- breadcrumb start-->
 
 	<!-- Start Sample Area -->
 	<section class="sample-text-area">
 		<div class="container box_1170">
 			<h3 class="text-heading">Nos motivations</h3>
 			<p class="sample-text">
-				Les amoureux des montres de luxe nous inspirent autant que les garde-temps précieux. C'est pourquoi les vendeurs et les acheteurs de montres de luxe ont toute notre attention.
+				Les amoureux des montres de luxe nous inspirent autant que les garde-temps précieux.<br> C'est pourquoi les vendeurs et les acheteurs de montres de luxe ont toute notre attention.
 
 
-Nous savons que notre entreprise n'existerait pas sans des montres de valeur et des passionnés de montres. <br>Mais nous n'aimons pas seulement les montres de haute qualité et leurs admirateurs. La complexité des technologies de l'information et les défis des marchés mondiaux nous motivent également à aller plus loin chaque jour. Parce que les technologies web et mobiles sont notre cœur de métier.
+				Nous savons que notre entreprise n'existerait pas sans des montres de valeur et des passionnés de montres. <br><br>Mais nous n'aimons pas seulement les montres de haute qualité et leurs admirateurs. La complexité des technologies de l'information et les défis des marchés mondiaux nous motivent également à aller plus loin chaque jour. Parce que les technologies web et mobiles sont notre cœur de métier.
 
-<br>Notre objectif est d'apporter confiance et transparence au marché mondial des montres de luxe. Cela se reflète également dans notre culture d'entreprise.
-
-Les employés de contenu créent les meilleurs produits. L'ouverture et l'appréciation sont des éléments clés de notre culture d'entreprise.
+				<br>Notre objectif est d'apporter confiance et transparence au marché mondial des montres de luxe. Cela se reflète également dans notre culture d'entreprise.
+				<br>
+				Les employés de contenu créent les meilleurs produits. L'ouverture et l'appréciation sont des éléments clés de notre culture d'entreprise.
 
 
 			</p>
@@ -108,7 +63,7 @@ Les employés de contenu créent les meilleurs produits. L'ouverture et l'appré
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="2_montres_rolex.jfif" class="img-pop-up img-gal"">
+						<a href="2_montres_rolex.jfif" class="img-pop-up img-gal">
 							<div class=" single-gallery-image" style="background: url(2_montres_rolex.jfif);"></div>
 					</a>
 				</div>
@@ -125,5 +80,5 @@ Les employés de contenu créent les meilleurs produits. L'ouverture et l'appré
 
 
 </body>
-
+<php include 'footer.php'; ?>
 </html>

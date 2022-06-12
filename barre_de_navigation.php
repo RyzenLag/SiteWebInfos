@@ -48,7 +48,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
                                     <a class="dropdown-item" href="contact.php">Contact</a>
-                                    <a class="dropdown-item" href="elements.php">Nous découvrir</a>
+                                    <a class="dropdown-item" href="discovery.php">Nous découvrir</a>
                                 </div>
                             </li>
                             <li class="nav-item">
