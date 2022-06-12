@@ -2,6 +2,11 @@
  * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
+
+
+
+
+
 .fa,
 .fas,
 .far,
@@ -18,6 +23,7 @@
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
+  color: rgba(80, 92, 90, 0.925);
   vertical-align: -.0667em; }
 
 .fa-xs {
