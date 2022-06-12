@@ -2,10 +2,18 @@
 <?php
     include 'barre_de_navigation.php';
 ?>
+<br>
+<br>
+<br>
+<br>
+<div style="background-image: url(../SiteWebInfos/img/Rolex_banner.jpg); background-color:rgba(0,0,0,0.5); " class="mt-4 container-fluid">
+	<br>
+	
 
 
-	<!-- Start Sample Area -->
-	<section class="sample-text-area">
+
+<!-- Start Sample Area -->
+	<section class="sample-text-area" style="background-color: rgba(255,255,255,0.95);">
 		<div class="container box_1170">
 			<h3 class="text-heading">Nos motivations</h3>
 			<p class="sample-text">
@@ -23,8 +31,9 @@
 		</div>
 	</section>
 	<!-- End Sample Area -->
-
-
+	
+    <br>
+</div>
 
 	<!-- Start Align Area -->
 	<div class="whole-wrap">
@@ -75,10 +84,6 @@
 			</div>
 		</div>
 
-	</div>
-	<!-- End Align Area -->
+	<?php include 'footer.php'?>
 
 
-</body>
-<php include 'footer.php'; ?>
-</html>
