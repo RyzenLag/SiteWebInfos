@@ -138,6 +138,18 @@
 
 </header>
     <!-- Header part end-->
-    
+    <section class="breadcrumb breadcrumb_bg" style="height: 83px; opacity: 0.4;">
+		<div class="container" >
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breadcrumb_iner text-center">
+						<div class="breadcrumb_iner_item">
+							<h2>elements</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
     
     <!-- breadcrumb start-->

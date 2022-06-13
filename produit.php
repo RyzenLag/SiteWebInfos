@@ -32,7 +32,7 @@
           <div class="col-6" >
             <div class="">
               <div id="vertical" class="" >
-                <img width="1200" height="600" src="img/montre/montre_<?php echo($product->id);?>.png" />
+                <img width="100" height="400" src="img/montre/montre_<?php echo($product->id);?>.png" />
               </div>
             </div>
           </div>

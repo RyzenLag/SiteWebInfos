@@ -19,6 +19,16 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1; }
+img{
+  transition: transform .5s;
+}
+img:hover{
+  
+transition: transform .5s;
+-ms-transform: scale(1.2); /* IE 9 */
+-webkit-transform: scale(1.2); /* Safari 3-8 */
+transform: scale(1.2);
+}
 
 .fa-lg {
   font-size: 1.33333em;

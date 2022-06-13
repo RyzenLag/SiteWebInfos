@@ -43,7 +43,7 @@
                         <img style="border:none;" width="100" src="img/montre/montre_<?php echo($product->id); ?>.png" />
                       </div>
                       <div class="media-body">
-                        <p><a href="produit.php?id=<?php echo($product->id);?>"><?php echo($product->nom); ?></a></p>
+                        <p><a style="color: rgb(0,0,0);" href="produit.php?id=<?php echo($product->id);?>"><?php echo($product->nom); ?></a></p>
                       </div>
                     </div>
                   </td>
@@ -54,7 +54,7 @@
                     <div class="product_count">
                       <span class="input-number-decrement"> <i class="ti-angle-down"></i></span>
                       <span><?php echo($_SESSION['panier'][$product->id]) ?></span>
-                      <input class="input-number" type="text" value="<?php echo($_SESSION['panier'][$product->id]) ?>" min="0" max="10">
+                      
                       <span class="input-number-increment"> <i class="ti-angle-up"></i></span>
                     </div>
                   </td>
@@ -62,7 +62,7 @@
                     <h5><?php echo(number_format($product->price*$_SESSION['panier'][$product->id],2,',',' ')); ?>€</h5>
                   </td>
                   <td>
-                    <a href="panier.php?del=<?php echo ($product->id); ?>">lien</a>
+                    <a style="color: rgb(0,0,0);" href="panier.php?del=<?php echo ($product->id); ?>">X</a>
                   </td>
                 </tr>
               <?php endforeach;?>

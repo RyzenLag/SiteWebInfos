@@ -8,33 +8,33 @@
 
 
             <!-- container part start -->
-                <br>
-                <br>
-                <br>
+              
+            
                
                 
-                <div style="background-image: url(../SiteWebInfos/img/Rolex_banner.jpg); background-color:rgba(0,0,0,0.5); " class="mt-4 container-fluid">  
-                    <div class="row justify-content-center" style="background-color:rgba(0,0,0,0.7);">
-                        <a class="col-2" style="color: black; text-align: center; height: 400px;" href="single-product.php?marque=Rolex&nom=">
-                            <img src="../SiteWebInfos/img/montre1.png" height="250" weidth="500">Rolex
+                <div style="background-image: url(../SiteWebInfos/img/Rolex_banner.jpg); background-color:rgba(0,0,0,0.5); height: 300px" class=" container-fluid">  
+                    <div class="row justify-content-center" style="background-color:rgba(0,0,0,0.75); height: 300px">
+                        <a class="col-2 pt-5" style="color: black; text-align: center; height: 400px;  color: rgb(255,255,255);" href="single-product.php?marque=Rolex&nom=">
+                            <img src="../SiteWebInfos/img/montre1.png" height="200" weidth="500">Rolex
                         </a>
-                        <a class="col-2" style="color: black; text-align: center; 400px;" href="single-product.php?marque=Cartier&nom=">
-                            <img src="../SiteWebInfos/img/montre2.png" height="250" weidth="500">Cartier
+                        <a class="col-2 pt-5" style="color: black; text-align: center; 400px;  color: rgb(255,255,255);" href="single-product.php?marque=Cartier&nom=">
+                            <img src="../SiteWebInfos/img/montre2.png" height="200" weidth="500">Cartier
                         </a>
-                        <a class="col-2" style="color: black; text-align: center; height: 400px;" href="single-product.php?marque=Richard Mille&nom=">
-                            <img src="../SiteWebInfos/img/montre3.png" height="250" weidth="500">Richard Mille
+                        <a class="col-2 pt-5" style="color: black; text-align: center; height: 400px; color: rgb(255,255,255);" href="single-product.php?marque=Richard Mille&nom=">
+                            <img src="../SiteWebInfos/img/montre3.png" height="200" weidth="500">Richard Mille
                         </a>
-                        <a class="col-2" style="color: black; text-align: center; height: 400px;" href="single-product.php?marque=Audemars Piguet&nom=">
-                            <img src="../SiteWebInfos/img/montre4.png" height="250" weidth="500">Audemars Piguet
+                        <a class="col-2 pt-5" style="color: black; text-align: center; height: 400px;  color: rgb(255,255,255);" href="single-product.php?marque=Audemars Piguet&nom=">
+                            <img src="../SiteWebInfos/img/montre4.png" height="200" weidth="500">Audemars Piguet
                         </a>
-                        <a class="col-2" style="color: black; text-align: center; height: 400px;" href="single-product.php?marque=Patek Philippe&nom=">
-                            <img src="../SiteWebInfos/img/montre5.png" height="250" weidth="500">Patek Philippe
+                        <a class="col-2 pt-5" style="color: black; text-align: center; height: 400px;  color: rgb(255,255,255);" href="single-product.php?marque=Patek Philippe&nom=">
+                            <img src="../SiteWebInfos/img/montre5.png" height="200" weidth="500">Patek Philippe
 </a>
                     </div>
                 </div>
             
             <!-- container part end -->
-            
+            <br>
+            <br>
 
             <!-- subscribe_area part start-->
             <!-- product_list part start-->

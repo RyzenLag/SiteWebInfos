@@ -41,6 +41,8 @@
                     $_SESSION['pseudo'] = $data['pseudo'];
                     $_SESSION['id'] = $data['id'];
                     $_SESSION['password'] = $data['password'];
+                    $_SESSION['admin'] = $data['admin'];
+                    
                     header("Location: index.php");
                     exit();
                 }

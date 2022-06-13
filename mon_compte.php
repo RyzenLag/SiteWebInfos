@@ -1,35 +1,4 @@
-<?php require_once 'config.php'; ?>
-<!doctype html>
-<html lang="zxx">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>aranoz</title>
-    <link rel="icon" href="img/favicon.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/all.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    
-</head>
-
-<body>
     <!--::header part start::-->
 
     <?php
@@ -65,6 +34,15 @@
                                         log out
                                     </button>
                                 </div>
+                                <?php 
+                                var_dump($_SESSION['admin']);
+                                if ($_SESSION['admin']==1){ ?>
+                                    <div class="col-md-12 form-group">
+                                        <button href="logout-php.php" type="submit" value="submit" class="btn_3">
+                                            log out
+                                        </button>
+                                    </div>
+                                <?php } ?>
                             </form>
                                                 
                         
